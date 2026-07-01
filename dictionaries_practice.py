@@ -26,6 +26,15 @@ del EMPLOYEE_DB['tech']["charlie"]
 
 print(EMPLOYEE_DB)
 
+summ = 0
+amount = 0
+
+for i, j in EMPLOYEE_DB.items():
+    for k in j.items():
+        summ += k[1]["salary"]
+        amount+=1
+
+print(summ/amount)
 
 
 
