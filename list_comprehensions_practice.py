@@ -14,6 +14,12 @@ TRANSACTIONS_DB = [
     {"id": 8, "client": "Hank", "amount": -50, "category": "Refund", "status": "failed"},
 ]
 
+
+succesful = [i["client"] for i in TRANSACTIONS_DB if i["status"] == "success"]
+
+print(succesful)
+
+
 # Ваш код для завдань нижче:
 
 raw_names = ["aLice", "BOB", "charlie", "dIAnA"]
