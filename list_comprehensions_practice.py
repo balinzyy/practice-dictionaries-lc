@@ -16,8 +16,15 @@ TRANSACTIONS_DB = [
 
 
 succesful = [i["client"] for i in TRANSACTIONS_DB if i["status"] == "success"]
+refunds = [i["amount"] for i in TRANSACTIONS_DB if i["category"] == "Refund"]
+revenue = [i["amount"] for i in TRANSACTIONS_DB if i["amount"] > 0 and i["status"] == "success"]
+revsum = sum(revenue)
+blacklist = [i["client"] for i in TRANSACTIONS_DB if i["status"] == "failed"]
 
 print(succesful)
+print(refunds)
+print(revsum)
+print(blacklist)
 
 
 # Ваш код для завдань нижче:
