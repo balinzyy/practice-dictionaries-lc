@@ -20,6 +20,13 @@ EMPLOYEE_DB = {
 
 print(f"Alice salary : {EMPLOYEE_DB['tech']['alice']['salary']}")
 
+EMPLOYEE_DB['sales']["diana"]["salary"] = 3500
+
+del EMPLOYEE_DB['tech']["charlie"]
+
+print(EMPLOYEE_DB)
+
+
 
 
 # Ваш код для завдань нижче:
