@@ -27,3 +27,9 @@ vip_transactions = [i for i in transactions if i > 10000]
 
 print(vip_transactions)
 
+balances = [5000, -1000, 250, -500]
+
+new_balances = [i if i > 0 else i*1.1 for i in balances]
+
+print(new_balances)
+
