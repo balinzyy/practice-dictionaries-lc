@@ -18,6 +18,10 @@ EMPLOYEE_DB = {
     }
 }
 
+print(f"Alice salary : {EMPLOYEE_DB['tech']['alice']['salary']}")
+
+
+
 # Ваш код для завдань нижче:
 
 user_profile = {"username": "cinema_fan", "is_premium": True, "discount": 15}
